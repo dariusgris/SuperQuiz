@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+    <body>
+        <header>
+            <p class="header__logo">Super Quiz</p>
+            <nav class="header__navigation">
+                <ul class="header__list">
+                    <li class="header__list-item"><a class="header__navigation-link header__navigation-link--pressed" href="#main-link">Главная</a>
+                        <ul class="header__sublist">
+                            <li class="header__sublist-item">Подпункт 1</li>
+                            <li class="header__sublist-item">Еще подпункт</li>
+                            <li class="header__sublist-item">И еще один подпункт</li>
+                        </ul>
+                    </li>
+                    <li class="header__list-item"><a class="header__navigation-link" href="#quiz-link">Квиз</a>
+                        <ul class="header__sublist">
+                            <li class="header__sublist-item">Подпункт 1</li>
+                            <li class="header__sublist-item">Еще подпункт</li>
+                            <li class="header__sublist-item">И еще один подпункт</li>
+                        </ul>
+                    </li>
+                    <li class="header__list-item"><a class="header__navigation-link" href="#review-link">Отзывы</a>
+                        <ul class="header__sublist">
+                            <li class="header__sublist-item">Подпункт 1</li>
+                            <li class="header__sublist-item">Еще подпункт</li>
+                            <li class="header__sublist-item">И еще один подпункт</li>
+                        </ul>
+                    </li>
+                    <li class="header__list-item"><a class="header__navigation-link" href="#noquiz-link">Не квиз</a>
+                        <ul class="header__sublist">
+                            <li class="header__sublist-item">Подпункт 1</li>
+                            <li class="header__sublist-item">Еще подпункт</li>
+                            <li class="header__sublist-item">И еще один подпункт</li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__social-container">
+                <button type="button" class="header__contact-button header__contact-button--margin">Связаться с нами</button>
+                <div class="header__social-items">
+                    <div class="header__social-item"><a href="https://www.tiktok.com/" class="header__social-link"><img src="assets/img/tt-logo.png"/></a></div>
+                    <div class="header__social-item"><a href="https://vk.com/" class="header__social-link"><img src="assets/img/vk-logo.png"/></a></div>
+                    <div class="header__social-item"><a href="https://telegram.org/" class="header__social-link"><img src="assets/img/tg-logo.png"/></a></div>
+                </div>
+            </div>
+            <div class="header__menu-button-container">
+                <button type="button" class="header__menu-button show-cross" id="menu-toggle" onclick="showMenu()">
+                    <span class="header__button-line header__button-cross-line"></span>
+                    <span class="header__button-line"></span>
+                    <span class="header__button-line"></span>
+                </button>
+            </div>
+        </header>
+        <main>
+            <nav class="main__menu-navigation">
+                <section class="main__menu-navigation">
+                    <ul class="main__navigation-list">
+                        <li class="main__navigation-item-container">
+                            <div onclick="handleItemClick(this)" class="main__navigation-item"><span>Главная</span><span>></span></div>
+                            <ul class="main__navigation-sublist">
+                                <li class="main__navigation-sublist-item">
+                                    Пондпункт
+                                </li>
+                                <li class="main__navigation-sublist-item">
+                                    Еще подпункт
+                                </li>                                
+                                <li class="main__navigation-sublist-item">
+                                    И еще один подпункт
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="main__navigation-item-container">
+                            <div onclick="handleItemClick(this)" class="main__navigation-item"><span>Не главная</span><span>></span></div>
+                            <ul class="main__navigation-sublist">
+                                <li class="main__navigation-sublist-item">
+                                    Пондпункт
+                                </li>
+                                <li class="main__navigation-sublist-item">
+                                    Еще подпункт
+                                </li>                                
+                                <li class="main__navigation-sublist-item">
+                                    И еще один подпункт
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="main__navigation-item-container">
+                            <div onclick="handleItemClick(this)" class="main__navigation-item"><span>Еще не главная</span><span>></span></div>
+                            <ul class="main__navigation-sublist">
+                                <li class="main__navigation-sublist-item">
+                                    Пондпункт
+                                </li>
+                                <li class="main__navigation-sublist-item">
+                                    Еще подпункт
+                                </li>                                
+                                <li class="main__navigation-sublist-item">
+                                    И еще один подпункт
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+                <section class="main__social-items main__social-items--margin main__menu-navigation">
+                    <div class="main__social-item"><a href="https://www.tiktok.com/" class="main__social-link"><img src="assets/img/tt-logo.png"/></a></div>
+                    <div class="main__social-item"><a href="https://vk.com/" class="main__social-link"><img src="assets/img/vk-logo.png"/></a></div>
+                    <div class="main__social-item"><a href="https://telegram.org/" class="main__social-link"><img src="assets/img/tg-logo.png"/></a></div>
+                </section>
+                <button class="main__contact-button main__menu-navigation main__contact-button--margin">Связаться с нами</button>
+            </nav>
+            <section id="main-link" class="main__welcome-container">
+                <h1 class="main__welcome-title">Это Супер-квиз!</h1>
+                <p class="main__description main__description--margin">Пройди квиз, и будешь счастлив. Этот квиз предназначен для тех людей, которые любят проходить тесты!</p>
+                <button class="main__button--pass-the-quiz">Пройти супер-квиз</button>
+            </section>
+            <section class="main__emoji-line">
+                <ul class="main__mood-list main__mood-carousel">
+                    <li>&#128523; Восхитительно </li>
+                    <li>&#128526; Лучше не бывает</li>
+                    <li>&#128525; Где найти еще?</li>
+                    <li>&#129321; В натуре четко!</li>
+                    <li>&#128525; Круто</li>
+                </ul>
+            </section>
+            <section id="quiz-link" class="main__test-container main__test-container--margin">  
+                <article class="main__answer-container">
+                    <div>
+                        <p class="main__question-text">
+                            Какие виды тестов вам нравятся?
+                        </p>
+                        <p class="main__answer-text"></p>
+                    </div>
+                    <div>
+                        <p class="main__question-text main__question-second-text">
+                            Вы любите проходить тесты?
+                        </p>
+                        <p class="main__answer-text main__answer-second--text"></p>
+                    </div>
+                    <div>
+                        <p class="main__answer-text">
+                            Спасибо за ответы! Заполните форму ниже
+                        </p>
+                    </div>
+                </article>
+                <article class="main__question-test main__question-test--margin">
+                    <div class="blocks-questions">
+                        <div class="question" id="question1">
+                            <h1>Какие виды тестов вам нравятся?</h1>
+                            <p class="main__question-description main__question-description--margin">Многие из нас хоть раз попадались на эту удочку — хочешь пройти всего один тест из интернета, и вдруг понимаешь, что пролетело полдня.</p>
+                            <ul class="main__list-test-topics">
+                                <li onclick="selectFirstTest(this)">На темперамент</li>
+                                <li onclick="selectFirstTest(this)">Кто я из вселенной марвел</li>
+                                <li onclick="selectFirstTest(this)">Увидел это</li>
+                                <li onclick="selectFirstTest(this)">Мое тотемное животное</li>
+                                <li onclick="selectFirstTest(this)">На IQ</li>
+                                <li onclick="selectFirstTest(this)">На словарный запас</li>
+                                <li onclick="selectFirstTest(this)">На логическое мышление</li>
+                                <li onclick="selectFirstTest(this)">На уровень интеллекта</li>
+                            </ul>
+                            <button onclick="showNextQuestion('question1', 'question2')" class="main__continue-button main__continue-button--margin">Продолжить</button>
+                        </div>
+                        <div class="question" id="question2">
+                            <h1>Вы любите проходить тесты?</h1>
+                            <p class="main__question-description main__question-description--margin">Нам важно узнать насолько часто Вы проходите тесты.</p>
+                            <ul class="main__list-test-topics">
+                                <li onclick="selectSecondTest(this)">Нет, я не никогда не прохожу тесты</li>
+                                <li onclick="selectSecondTest(this)">Да, я прохожу все тесты</li>
+                                <li onclick="selectSecondTest(this)">Заставляю себя проходить тесты</li>
+                                <li onclick="selectSecondTest(this)">Не люблю проходить тесты, но иногда приходится</li>
+                            </ul>
+                            <button onclick="showPreviousQuestion('question2', 'question1')" class="main__continue-button  main__continue-button--margin">Назад</button>
+                            <button onclick="showNextQuestion('question2', 'question3')" class="main__continue-button main__continue-button--margin">Продолжить</button>
+                        </div>
+                        <div class="question" id="question3">
+                            <h1>😉👍</h1>
+                            <h1>Спасибо за ответы! заполните форму ниже</h1>
+                            <p class="main__question-description main__question-description--margin">Ваше мнение важно для нас. Прикрепите фото с Вашей любимой картинкой и оставьте комментарий насколько понравился Вам тест.</p>
+                            <input class="print-review" type="text" placeholder="Ваше мнение сюда">
+                            <div class="main__dropdown">
+                                <div class="dropdow__selected-option"></div>
+                                <ul class="dropdow__options">
+                                    <li data-value="like">Очень понравился</li>
+                                    <li data-value="dislike">Не понравился</li>
+                                    <li data-value="again">Пройду еще раз</li>
+                                    <li data-value="advice">Посоветую пройти всем</li>
+                                </ul>
+                            </div>
+                            <button onclick="showPreviousQuestion('question3', 'question2')" class="main__continue-button main__continue-button--margin">Назад</button>
+                            <button class="main__continue-button main__continue-button--margin">Продолжить</button>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <section id="review-link" class="main__slider-container main__slider-container--margin">
+                <div class="main__slider swiper">
+                    <div class="slider__cards-container">
+                        <div class="swiper-wrapper">
+                            <article class="card-article swiper-slide" style="background-image: url('./assets/img/bg1.png');">
+                                <div class="card-image-container">
+                                    <img src="./assets/img/person1.png" alt="avatar" class="card-image">
+                                </div>
+                                <div class="card-data">
+                                    <h3 class="card-name">Андрей Пархимович</h3>
+                                    <p class="card-description">В целом, конечно, постоянное информационно-пропагандистское обеспечение нашей деятельности влечет за собой процесс внедрения и модернизации направлений прогрессивного развития.</p>
+                                </div>
+                            </article>
+                            <article class="card-article swiper-slide" style="background-image: url('./assets/img/bg2.png');">
+                                <div class="card-image-container">
+                                    <img src="./assets/img/person2.jpg" alt="avatar" class="card-image">
+                                </div>
+                                <div class="card-data">
+                                    <h3 class="card-name">Алексей Котов</h3>
+                                    <p class="card-description">Задача организации, в особенности же убеждённость некоторых оппонентов предопределяет высокую востребованность благоприятных перспектив.</p>
+                                </div>
+                            </article>
+                            <article class="card-article swiper-slide" style="background-image: url('./assets/img/bg3.png');">
+                                <div class="card-image-container">
+                                    <img src="./assets/img/person3.png" alt="avatar" class="card-image">
+                                </div>
+                                <div class="card-data">
+                                    <h3 class="card-name">Артем Ходунов</h3>
+                                    <p class="card-description">Господа, глубокий уровень погружения в значительной степени обусловливает важность глубокомысленных рассуждений.</p>
+                                </div>
+                            </article>
+                            <article class="card-article swiper-slide" style="background-image: url('./assets/img/bg4.png');">
+                                <div class="card-image-container">
+                                    <img src="./assets/img/person1.png" alt="avatar" class="card-image">
+                                </div>
+                                <div class="card-data">
+                                    <h3 class="card-name">Антон Попович</h3>
+                                    <p class="card-description">Мне очень понравился тест.</p>
+                                </div>
+                            </article>
+                            <article class="card-article swiper-slide" style="background-image: url('./assets/img/bg2.png');">
+                                <div class="card-image-container">
+                                    <img src="./assets/img/person4.jpeg" alt="avatar" class="card-image">
+                                </div>
+                                <div class="card-data">
+                                    <h3 class="card-name">Алиса Хвонова</h3>
+                                    <p class="card-description">Все Супер!</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next">
+                        <i class="ri-arrow-right-s-line"></i>
+                     </div>
+                     <div class="swiper-button-prev">
+                        <i class="ri-arrow-left-s-line"></i>
+                     </div>
+                </div>
+            </section>
+        </main>
+        <footer id="noquiz-link">
+            <div class="footer__copyright footer__copyright--margin">
+                <p class="footer__copyright-text">Super Quiz</p>
+            </div>
+            <div class="footer__contacts-container">
+                <div class="footer__contacts">
+                    <div class="footer__contact--margin">
+                        <p class="footer__contact-title">Телефон</p>
+                        <p class="footer__contact-info"><a href="tel:+375 12 345 67 89" class="footer__contact-link">+375 12 345 67 89</a> </p>
+                    </div>
+                    <div>
+                        <p class="footer__contact-title">Email</p>
+                        <p class="footer__contact-info"><a href="mailto:ourmail@gmail.com" class="footer__contact-link">ourmail@gmail.com</a></p>
+                    </div>
+                </div>
+                    <div class="footer__social-container">
+                        <div class="footer__social-item footer__social-item--margin footer__social-item--tiktok"><a class="footer__social-link" href="https://www.tiktok.com/"><img class="footer__social-image" src="assets/img/tt-logo.png"/></a></div>
+                        <div class="footer__social-item footer__social-item--margin footer__social-item--vkontakte"><a class="footer__social-link" href="https://vk.com/"><img class="footer__social-image" src="assets/img/vk-logo.png"/></a></div>
+                        <div class="footer__social-item footer__social-item--telegram"><a  class="footer__social-link" href="https://telegram.org/"><img class="footer__social-image" src="assets/img/tg-logo.png"/></a></div>
+                    </div>
+            </div>
+        </footer>
+        <script src="assets/js/script.js"></script>
+        <script src="assets/libs/swiper/swiper-bundle.min.js"></script>
+        <script src="assets/libs/swiper/script.js"></script>
+    </body>
+</html>
+
+
+<!--
+
+
+                            <div class="question">
+                            <h1>Какие виды тестов вам нравятся?</h1>
+                            <p class="main__question-description main__question-description--margin">Многие из нас хоть раз попадались на эту удочку — хочешь пройти всего один тест из интернета, и вдруг понимаешь, что пролетело полдня.</p>
+                            <ul class="main__list-test-topics">
+                                <li onclick="selectTest(this)">На темперамент</li>
+                                <li onclick="selectTest(this)">Кто я из вселенной марвел</li>
+                                <li onclick="selectTest(this)">Увидел это</li>
+                                <li onclick="selectTest(this)">Мое тотемное животное</li>
+                                <li onclick="selectTest(this)">На IQ</li>
+                                <li onclick="selectTest(this)">На словарный запас</li>
+                                <li onclick="selectTest(this)">На логическое мышление</li>
+                                <li onclick="selectTest(this)">На уровень интеллекта</li>
+                            </ul>
+                            <button class="main__continue-button next-button main__continue-button--margin">Продолжить</button>
+                        </div>
+                        <div class="question">
+                            <h1>Вы любите проходить тесты?</h1>
+                            <p class="main__question-description main__question-description--margin">Нам важно узнать насолько часто Вы проходите тесты.</p>
+                            <ul class="main__list-test-topics">
+                                <li onclick="selectTest(this)">Нет, я не никогда не прохожу тесты</li>
+                                <li onclick="selectTest(this)">Да, я прохожу все тесты</li>
+                                <li onclick="selectTest(this)">Заставляю себя проходить тесты</li>
+                                <li onclick="selectTest(this)">Не люблю проходить тесты, но иногда приходится</li>
+                            </ul>
+                            <button class="main__continue-button prev-button main__continue-button--margin">Назад</button>
+                            <button class="main__continue-button next-button main__continue-button--margin">Продолжить</button>
+                        </div>
+-->
