@@ -17,7 +17,6 @@ gulp.task('sass', function() {
       .pipe(sass())
       .pipe(gulp.dest('site/assets/css'))
       .pipe(browserSync.reload({stream: true}))
-      //.pipe(browserSync.stream());
 });
 
 gulp.task('watch', gulp.parallel('browserSync', 'sass', function (){
