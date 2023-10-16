@@ -790,6 +790,11 @@ body {
     }
   }
 }
+@media screen and (max-width: 465px) {
+  .main__list-test-topics {
+    width: min-content;
+  }
+}
 
 @font-face {
   font-family: "RalewayMedium"; 
